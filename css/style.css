@@ -810,7 +810,7 @@ tbody tr:first-child td {
     }
 
     #tutorial .container {
-        padding-top: calc(20 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+        padding-top: calc(60 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
         padding-bottom: calc(480 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     }
 
