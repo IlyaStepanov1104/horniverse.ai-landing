@@ -64,5 +64,5 @@ $(document).ready(function () {
 
 function maskString(str) {
     if (str.length <= 6) return str;
-    return str.slice(0, 4) + '...' + str.slice(-2);
+    return str.slice(0, 5) + '...' + str.slice(-3);
 }
