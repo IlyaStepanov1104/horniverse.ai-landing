@@ -45,7 +45,15 @@ $(document).ready(function () {
         url: 'https://horniverse.ai/game/leaderboard',
         method: 'GET',
         success: function (response) {
-            console.log(response);
+            const table = $(".leaderboard-table");
+            response.forEach(({wallet_address, wins}) => {
+                table.append(`
+                    <tr>
+                        <td class="leaderboard-title">${maskString(wallet_address)}</td>
+                        <td class="leaderboard-score">${wins} points</td>
+                    </tr>
+            `);
+            })
         },
         error: function (xhr, status, error) {
             console.error('Ошибка запроса: ' + error);
@@ -54,3 +62,7 @@ $(document).ready(function () {
 
 });
 
+function maskString(str) {
+    if (str.length <= 6) return str;
+    return str.slice(0, 4) + '...' + str.slice(-2);
+}
