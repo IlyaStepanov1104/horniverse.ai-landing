@@ -351,7 +351,7 @@ u {
     margin-top: calc(100 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
 
-#about .container:last-child, #tokens .container:last-child {
+#about .container:last-child {
     margin-top: calc(200 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
 
