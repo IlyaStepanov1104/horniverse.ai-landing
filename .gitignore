@@ -1,0 +1,34 @@
+# Node.js modules
+node_modules/
+
+# PHP vendor directory
+vendor/
+
+# Archive files (zip, tar, etc.)
+*.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.rar
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# Build directories
+dist/
+build/
+
+# IDE/editor folders
+.idea/
+.vscode/
+
+# NPM and Yarn lock files (if you don't want to include them in the repo)
+# package-lock.json
+# yarn.lock
