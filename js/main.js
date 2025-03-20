@@ -41,5 +41,16 @@ $(document).ready(function () {
             console.error('Ошибка запроса: ' + error);
         }
     }));
+    $.ajax({
+        url: 'https://horniverse.ai/game/leaderboard',
+        method: 'GET',
+        success: function (response) {
+            console.log(response);
+        },
+        error: function (xhr, status, error) {
+            console.error('Ошибка запроса: ' + error);
+        }
+    })
+
 });
 
