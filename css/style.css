@@ -950,3 +950,6 @@ tbody tr:first-child td {
     margin: 0;
     width: 100%;
 }
+.grid-item .link p {
+    font-size: calc(12* clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+}
