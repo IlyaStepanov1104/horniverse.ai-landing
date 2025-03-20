@@ -355,7 +355,7 @@ u {
     margin-top: calc(200 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
 
-#about .container:last-child p, #tokens .container:last-child p {
+#about .container:last-child p {
     width: 63%;
     margin-top: calc(15 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     margin-bottom: calc(35 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
@@ -586,6 +586,10 @@ tbody tr:first-child td {
     width: calc(26 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
 
+.footer-text {
+    font-size: 12px;
+}
+
 @media (min-width: 766px) {
     .mobile {
         display: none;
@@ -593,6 +597,9 @@ tbody tr:first-child td {
 }
 
 @media (max-width: 765px) {
+    .footer-text {
+        font-size: 8px;
+    }
     .desktop {
         display: none;
     }
