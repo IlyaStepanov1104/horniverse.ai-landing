@@ -41,6 +41,7 @@ $(document).ready(function () {
             console.error('Ошибка запроса: ' + error);
         }
     }));
+
     $.ajax({
         url: 'https://horniverse.ai/game/leaderboard',
         method: 'GET',
@@ -59,7 +60,21 @@ $(document).ready(function () {
             console.error('Ошибка запроса: ' + error);
         }
     })
-
+    $.ajax({
+        url: 'https://horniverse.ai/game/get-config',  // Адрес эндпоинта
+        method: 'GET',            // Метод запроса
+        data: {key: `max_winners_count`},  // Параметры запроса
+        success: function (response) {
+            if (response && response.value) {
+                $(`.js-winners`).text(response.value);
+            } else {
+                console.error('Ошибка: Не удалось получить данные');
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error('Ошибка запроса: ' + error);
+        }
+    })
 });
 
 function maskString(str) {
