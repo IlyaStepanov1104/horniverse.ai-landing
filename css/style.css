@@ -584,7 +584,7 @@ tbody tr:first-child td {
 
 .icons {
     display: flex;
-    gap: 32px;
+    gap: 24px;
     flex-wrap: wrap;
     align-items: flex-start;
 }
@@ -592,12 +592,12 @@ tbody tr:first-child td {
 .icon {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
     align-items: center;
 }
 
 .icon__image {
-    width: 96px;
+    width: 64px;
     border-radius: 50%;
     outline: 2px solid #ffffff;
 }
@@ -929,23 +929,6 @@ tbody tr:first-child td {
         display: flex;
         margin-right: calc(-21 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
         font-size: var(--menu);
-    }
-
-
-    .icons {
-        gap: 24px;
-    }
-
-    .icon {
-        gap: 12px;
-    }
-
-    .icon__image {
-        width: 64px;
-    }
-
-    .icon__title {
-        font-size: calc(12 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     }
 
     .coin-block {
