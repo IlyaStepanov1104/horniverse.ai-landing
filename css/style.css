@@ -28,7 +28,7 @@
     --primary: #EF4A82;
     --ideal-viewport-width: 1280;
     --current-viewport-width: 100vw;
-    --section-space: 180px;
+    --section-space: 120px;
 }
 
 body {
@@ -584,7 +584,7 @@ tbody tr:first-child td {
 
 .icons {
     display: flex;
-    gap: 48px;
+    gap: 32px;
     flex-wrap: wrap;
     align-items: flex-start;
 }
@@ -592,20 +592,20 @@ tbody tr:first-child td {
 .icon {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 18px;
     align-items: center;
 }
 
 .icon__image {
-    width: 128px;
+    width: 96px;
     border-radius: 50%;
-    outline: 3px solid #ffffff;
+    outline: 2px solid #ffffff;
 }
 
 .icon__title {
     text-decoration: underline;
     color: var(--primary);
-    font-size: calc(16 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+    font-size: calc(14 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     text-align: center;
 }
 
