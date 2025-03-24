@@ -760,6 +760,10 @@ tbody tr:first-child td {
         width: 100%;
     }
 
+    #tutorial .container {
+        padding-bottom: calc(400 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+    }
+
     .burger-menu-icon {
         width: calc(50 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
         height: calc(50 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
@@ -841,13 +845,13 @@ tbody tr:first-child td {
     .tutorial-1 {
         right: 0;
         left: 2%;
-        top: calc(800 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+        top: calc(700 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
         width: calc(160 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     }
 
     .tutorial-2 {
         left: 47%;
-        top: calc(770 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+        top: calc(650 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
         width: calc(160 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     }
 
