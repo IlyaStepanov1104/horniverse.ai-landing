@@ -191,7 +191,7 @@ section:not(:first-of-type) {
     position: absolute;
     height: 100%;
     top: 0;
-    width: 100%;
+    width: calc(400 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -248,7 +248,7 @@ section:not(:first-of-type) {
 }
 
 .home-5 {
-    right: 0;
+    right: -7%;
     top: 24%;
     z-index: 2;
     width: calc(170 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
