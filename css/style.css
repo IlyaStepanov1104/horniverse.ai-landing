@@ -33,6 +33,7 @@
 
 body {
     background: #06000D;
+    overflow-x: hidden;
 }
 
 @font-face {
