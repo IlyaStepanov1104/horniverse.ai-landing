@@ -28,6 +28,7 @@
     --primary: #EF4A82;
     --ideal-viewport-width: 1280;
     --current-viewport-width: 100vw;
+    --section-space: 180px;
 }
 
 body {
@@ -169,10 +170,11 @@ header .btn:hover {
     height: calc(40 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
 
-section {
+section:not(:first-of-type) {
     color: #fff;
     background: #090014;
     overflow: hidden;
+    margin-top: var(--section-space);
 }
 
 #home .container {
@@ -182,7 +184,6 @@ section {
     align-items: center;
     justify-content: flex-end;
     text-align: center;
-    padding-bottom: calc(45 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
 
 #home video {
@@ -281,14 +282,10 @@ section {
 }
 
 #tutorial .container {
-    padding-top: calc(200 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
-}
-
-#tutorial .container {
-    padding-top: calc(200 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     display: flex;
     flex-direction: column;
     gap: calc(13 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+    padding-bottom: calc(150 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
 
 #tutorial p {
@@ -345,10 +342,6 @@ u {
 
 .about-3.desktop {
     width: 70%;
-}
-
-#tokens {
-    margin-top: calc(100 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
 
 #about .container:last-child {
@@ -436,13 +429,11 @@ u {
 }
 
 #refferal {
-    padding-top: calc(230 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     background: radial-gradient(50% 50% at 50% 50%, #0D1426 0%, #131B2E 50%, #06000D 100%);
-    margin-top: calc(-1 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
 
 #refferal .container:first-child {
-    margin-bottom: 85vh;
+    margin-bottom: calc(250 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width))
 }
 
 #refferal .container:first-child p {
@@ -484,6 +475,7 @@ u {
     padding-right: calc(40 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     padding-top: calc(30 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     padding-bottom: calc(30 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+    margin-top: var(--section-space);
 }
 
 #refferal .menu-wrapper a {
@@ -590,6 +582,43 @@ tbody tr:first-child td {
     font-size: 12px;
 }
 
+.icons {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.icon__image {
+    width: 128px;
+    border-radius: 50%;
+    outline: 3px solid #ffffff;
+}
+
+.icon__title {
+    text-decoration: underline;
+    color: var(--primary);
+    font-size: calc(16 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+    text-align: center;
+}
+
+.coin-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.coin-block .link {
+    margin: 0;
+}
+
 @media (min-width: 766px) {
     .mobile {
         display: none;
@@ -600,6 +629,7 @@ tbody tr:first-child td {
     .footer-text {
         font-size: 8px;
     }
+
     .desktop {
         display: none;
     }
@@ -613,6 +643,7 @@ tbody tr:first-child td {
         --white: #fff;
         --primary: #EF4A82;
         --ideal-viewport-width: 390;
+        --section-space: 80px;
     }
 
     .container {
@@ -698,10 +729,6 @@ tbody tr:first-child td {
 
     .burger-close {
         width: calc(40 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
-    }
-
-    #home .container {
-        padding-bottom: calc(70 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     }
 
     header {
@@ -809,30 +836,21 @@ tbody tr:first-child td {
         margin-top: calc(20 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     }
 
-    #tutorial .container {
-        padding-top: calc(100 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
-        padding-bottom: calc(480 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
-    }
-
     .tutorial-1 {
         right: 0;
         left: 2%;
-        top: calc(700 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+        top: calc(800 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
         width: calc(160 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     }
 
     .tutorial-2 {
         left: 47%;
-        top: calc(670 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+        top: calc(770 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
         width: calc(160 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     }
 
     .tutorial-3 {
         width: calc(280 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
-    }
-
-    #refferal {
-        padding-top: calc(100 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     }
 
     #refferal .container:first-child p {
@@ -878,11 +896,12 @@ tbody tr:first-child td {
     .refferal-5 {
         position: absolute;
         bottom: 0;
-        width: 63%;
-        left: 16%;
-        -o-object-fit: fill;
-        object-fit: fill;
+        width: 35%;
+        left: 35%;
+        -o-object-fit: contain;
+        object-fit: contain;
         height: calc(174 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+        object-position: bottom center;
     }
 
     #refferal .socials {
@@ -910,6 +929,31 @@ tbody tr:first-child td {
         display: flex;
         margin-right: calc(-21 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
         font-size: var(--menu);
+    }
+
+
+    .icons {
+        gap: 24px;
+    }
+
+    .icon {
+        gap: 12px;
+    }
+
+    .icon__image {
+        width: 64px;
+    }
+
+    .icon__title {
+        font-size: calc(12 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+    }
+
+    .coin-block {
+        flex-direction: column;
+    }
+
+    .coin-block .link {
+        margin-bottom: 24px;
     }
 }
 
@@ -950,6 +994,7 @@ tbody tr:first-child td {
     margin: 0;
     width: 100%;
 }
-.grid-item .link p {
-    font-size: calc(12* clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+
+.link p {
+    font-size: calc(12 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
