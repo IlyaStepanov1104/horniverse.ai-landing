@@ -51,7 +51,7 @@ $(document).ready(function () {
                 table.append(`
                     <tr>
                         <td class="leaderboard-title">${maskString(wallet_address)}</td>
-                        <td class="leaderboard-score">${wins} <img src="/game/images/game/ui/CoinAnimated.gif"></td>
+                        <td class="leaderboard-score">${wins} <img src="/game/images/game/ui/CoinAnimated.gif" style="height: 1.3rem"></td>
                     </tr>
             `);
             })

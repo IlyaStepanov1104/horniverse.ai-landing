@@ -989,3 +989,9 @@ tbody tr:first-child td {
 .link p {
     font-size: calc(12 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
 }
+
+.leaderboard-score {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
