@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    const isPhantomApp = /Phantom/i.test(navigator.userAgent);
+    const isSolflareApp = /Solflare/i.test(navigator.userAgent);
+
+    if (isPhantomApp || isSolflareApp || true) {
+        $('.modal').css('display', 'flex');
+    }
+
     const $burgerMenu = $('.burger-menu'),
         $burgerOpen = $('.burger-menu-icon'),
         $burgerClose = $('.burger-close');
@@ -80,4 +87,8 @@ $(document).ready(function () {
 function maskString(str) {
     if (str.length <= 6) return str;
     return str.slice(0, 5) + '...' + str.slice(-3);
+}
+
+const closeModal = () => {
+    $('.modal').hide();
 }
