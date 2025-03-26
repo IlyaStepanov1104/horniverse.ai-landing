@@ -635,6 +635,7 @@ tbody tr:first-child td {
 
 @media (max-width: 765px) {
     .footer-text {
+        margin-top: 32px;
         font-size: 8px;
     }
 
