@@ -66,8 +66,7 @@ img {
 }
 
 h1 {
-    font-family: var(--bs-font-sans-serif);
-    font-weight: 900;
+    font-family: "Rimma";
     font-size: var(--h1);
 }
 
@@ -109,8 +108,7 @@ header {
 
 .menu-wrapper a {
     color: #000;
-    font-family: var(--bs-font-sans-serif);
-    font-weight: 900;
+    font-family: "Rimma";
     text-decoration: none;
     font-size: var(--menu);
 }
@@ -422,7 +420,7 @@ u {
 
 .benefits .item > *:first-child {
     font-family: var(--bs-font-sans-serif);
-    font-weight: 900;
+font-weight: 900;
     font-size: var(--menu);
     height: calc(75 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     display: flex;
@@ -716,8 +714,7 @@ tbody tr:first-child td {
     }
 
     .burger-menu a {
-        font-family: var(--bs-font-sans-serif);
-        font-weight: 900;
+        font-family: "Rimma";
         color: #000;
         text-decoration: none;
         font-size: var(--menu);
