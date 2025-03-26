@@ -1025,6 +1025,7 @@ tbody tr:first-child td {
 
 .modal-content h2 {
     color: red;
+    text-align: center;
 }
 
 .close-btn {

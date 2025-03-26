@@ -2,7 +2,7 @@ $(document).ready(function () {
     const isPhantomApp = /Phantom/i.test(navigator.userAgent);
     const isSolflareApp = /Solflare/i.test(navigator.userAgent);
 
-    if (isPhantomApp || isSolflareApp || true) {
+    if (isPhantomApp || isSolflareApp) {
         $('.modal').css('display', 'flex');
     }
 
