@@ -420,7 +420,8 @@ u {
 
 .benefits .item > *:first-child {
     font-family: var(--bs-font-sans-serif);
-font-weight: 900;
+    font-weight: 900;
+    text-transform: uppercase;
     font-size: var(--menu);
     height: calc(75 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     display: flex;
