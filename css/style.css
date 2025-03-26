@@ -251,7 +251,7 @@ section:not(:first-of-type) {
 }
 
 .home-5 {
-    right: -7%;
+    right: 0;
     top: 24%;
     z-index: 2;
     width: calc(170 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
@@ -994,4 +994,6 @@ tbody tr:first-child td {
     display: flex;
     align-items: center;
     gap: 5px;
+    line-height: 1;
+
 }
