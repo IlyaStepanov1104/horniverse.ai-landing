@@ -66,7 +66,8 @@ img {
 }
 
 h1 {
-    font-family: "Rimma";
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 900;
     font-size: var(--h1);
 }
 
@@ -108,7 +109,8 @@ header {
 
 .menu-wrapper a {
     color: #000;
-    font-family: "Rimma";
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 900;
     text-decoration: none;
     font-size: var(--menu);
 }
@@ -419,7 +421,8 @@ u {
 }
 
 .benefits .item > *:first-child {
-    font-family: "Rimma";
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 900;
     font-size: var(--menu);
     height: calc(75 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     display: flex;
@@ -591,6 +594,8 @@ tbody tr:first-child td {
     gap: 24px;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
+    width: 100%;
 }
 
 .icon {
@@ -711,7 +716,8 @@ tbody tr:first-child td {
     }
 
     .burger-menu a {
-        font-family: "Rimma";
+        font-family: var(--bs-font-sans-serif);
+        font-weight: 900;
         color: #000;
         text-decoration: none;
         font-size: var(--menu);
