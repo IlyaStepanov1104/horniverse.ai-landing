@@ -482,6 +482,7 @@ u {
     padding-top: calc(30 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     padding-bottom: calc(30 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
     margin-top: var(--section-space);
+    margin-bottom: 0;
 }
 
 #refferal .menu-wrapper a {
@@ -878,6 +879,7 @@ tbody tr:first-child td {
     #refferal .container:last-child {
         padding-left: calc(15 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
         padding-right: calc(15 * clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width));
+        margin-bottom: 0;
     }
 
     #refferal .container:last-child h1 {
